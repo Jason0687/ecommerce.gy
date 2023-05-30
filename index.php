@@ -1,4 +1,7 @@
 
+<?php
+    
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,11 +50,11 @@
                 <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
                 <button type='button'onclick='register()'class='toggle-btn'>Register</button>
             </div>
-            <form id='login' class='input-group-login' action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
-                <input type='email' name="Email" class='input-field' placeholder='email'>
-                <input type='password' name="password" class='input-field' placeholder='Password'>
+            <form id='login' class='input-group-login'>
+                <input type='text' class='input-field' placeholder='Email' required>
+                <input type='password' class='input-field' placeholder='Password' required>
                 <input type='checkbox' class='check-box'><span>Remember Password</span>
-                <button type='submit' class='submit-btn'><a href="#home">Login</a></button>
+                <button type='' class='submit-btn'>Log in</button>
             </form>
               
      <form id='register' class='input-group-register' action="process_form.php" method="POST">
@@ -60,12 +63,12 @@
             <option value='buyer'>Buyer</option>
             <option value='supplier'>Supplier</option>
         </select>
-         <input type='name' name="Full_Name" class='input-fields'placeholder='Full Name' id="input-field1">
+        <input type='name' name="Full_Name" class='input-fields'placeholder='Full Name' id="input-field1">
          <input type='email' name="Email"class='input-fields'placeholder='Email' id="input-field2">
          <input type='number' name="Contact"class='input-fields'placeholder='Contact Number' id="input-field3">
          <input type='address' name="Address" class='input-fields'placeholder='Complete Address' id="input-field4">
          <input type='password' name="password" class='input-fields'placeholder='Enter Password' id="input-field5">
-         <input type='Confirm_Password' name="password2" class='input-fields'placeholder='Confirm Password'  id="input-field6">
+         <input type='password'class='input-fields'placeholder='Confirm Password'  required id="input-field6">
          <input type='checkbox'class='check-box1'><span>I agree to the terms and conditions</span>
         <button type='submit'class='submit-btn1'>Register</button>
          </form>

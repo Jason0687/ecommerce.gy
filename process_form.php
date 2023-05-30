@@ -33,5 +33,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-
+header("location: index.php");
 ?>
